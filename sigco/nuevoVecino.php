@@ -16,6 +16,10 @@
         <input type="text" id="direccion" name="direccion"/>
     </div>
     <div>
+        <label for="postal">Código Postal:</label>
+        <input type="text" id="postal" name="postal"/>
+    </div>
+    <div>
         <label for="codigo">Dirección:</label>
         <input type="text" id="codigo" name="codigo"/>
     </div>
