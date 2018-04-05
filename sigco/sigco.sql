@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: localhost
--- Tiempo de generación: 02-04-2018 a las 18:00:26
+-- Tiempo de generación: 05-04-2018 a las 16:53:31
 -- Versión del servidor: 10.1.21-MariaDB
 -- Versión de PHP: 5.6.30
 
@@ -37,6 +37,19 @@ CREATE TABLE `administradores` (
 -- --------------------------------------------------------
 
 --
+-- Estructura de tabla para la tabla `facturas`
+--
+
+CREATE TABLE `facturas` (
+  `id` int(11) NOT NULL,
+  `id_pago` int(11) NOT NULL,
+  `id_vecino` int(11) NOT NULL,
+  `monto` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
 -- Estructura de tabla para la tabla `fichas`
 --
 
@@ -48,6 +61,17 @@ CREATE TABLE `fichas` (
   `importe` int(11) NOT NULL,
   `rut_administrador` int(11) NOT NULL,
   `estado` tinyint(1) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `pagos`
+--
+
+CREATE TABLE `pagos` (
+  `id` int(11) NOT NULL,
+  `id_ficha` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
