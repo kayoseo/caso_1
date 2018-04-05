@@ -1,11 +1,11 @@
-<form action="/my-handling-form-page" method="post">
+<form action="crearVisita.php" method="post">
     <div>
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre"/>
+        <label for="rutVecino">Rut Vecino:</label>
+        <input type="int" id="rutVecino" name="rutVecino"/>
     </div>
     <div>
-        <label for="apellidos">Apellidos:</label>
-        <input type="text" id="apellidos" name="apellidos"/>
+        <label for="rutAdmin">Rut Administrador:</label>
+        <input type="int" id="rutAdmin" name="rutAdmin"/>
     </div>
     <div>
         <label for="fecha">Fecha:</label>
@@ -17,10 +17,8 @@
     </div>
     <div>
         <label for="importe">Importe:</label>
-        <input type="importe" id="importe" />
+        <input type="int" id="importe" />
     </div>
-    <div>
-        <label for="administrador">Administrador:</label>
-        <input type="administrador" id="administrador" />
-    </div>
+
+    <input type="submit" value="Enviar" />
 </form>

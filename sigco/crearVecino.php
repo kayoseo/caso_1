@@ -11,7 +11,7 @@ $ciudad = mysqli_real_escape_string($db, $_REQUEST['city']);
 $telefono = mysqli_real_escape_string($db, $_REQUEST['phone']);
  
 // attempt insert query execution
-$sql = "INSERT INTO vecinos (rut, nombre, apellido, direccion, postal, ciudad, telefono) VALUES ('$$rut', '$nombre', '$apellido', '$direccion', '$postal', '$ciudad', '$telefono')";
+$sql = "INSERT INTO vecinos (rut, nombre, apellido, direccion, postal, ciudad, telefono) VALUES ('$rut', '$nombre', '$apellido', '$direccion', '$postal', '$ciudad', '$telefono')";
 
 if(mysqli_query($db, $sql)){
     echo "Vecino creado con éxito.";
