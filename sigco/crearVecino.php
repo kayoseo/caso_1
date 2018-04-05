@@ -1,5 +1,5 @@
 <?php
-include_once '../dbCon.php';
+include_once 'dbCon.php';
  
 // Escape user inputs for security
 $rut = mysqli_real_escape_string($db, $_REQUEST['rut']);
@@ -7,8 +7,8 @@ $nombre = mysqli_real_escape_string($db, $_REQUEST['nombre']);
 $apellido = mysqli_real_escape_string($db, $_REQUEST['apellido']);
 $direccion = mysqli_real_escape_string($db, $_REQUEST['direccion']);
 $postal = mysqli_real_escape_string($db, $_REQUEST['postal']);
-$ciudad = mysqli_real_escape_string($db, $_REQUEST['ciudad']);
-$telefono = mysqli_real_escape_string($db, $_REQUEST['telefono']);
+$ciudad = mysqli_real_escape_string($db, $_REQUEST['city']);
+$telefono = mysqli_real_escape_string($db, $_REQUEST['phone']);
  
 // attempt insert query execution
 $sql = "INSERT INTO vecinos (rut, nombre, apellido, direccion, postal, ciudad, telefono) VALUES ('$$rut', '$nombre', '$apellido', '$direccion', '$postal', '$ciudad', '$telefono')";

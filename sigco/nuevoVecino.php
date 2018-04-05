@@ -1,15 +1,15 @@
-<form action="/my-handling-form-page" method="post">
+<form action="crearVecino.php" method="post">
 <div>
         <label for="rut">Rut:</label>
-        <input type="text" id="rut" name="rut"/>
+        <input type="int" id="rut" name="rut"/>
     </div>
     <div>
         <label for="nombre">Nombre:</label>
         <input type="text" id="nombre" name="nombre"/>
     </div>
     <div>
-        <label for="apellidos">Apellidos:</label>
-        <input type="text" id="apellidos" name="apellidos"/>
+        <label for="apellido">Apellidos:</label>
+        <input type="text" id="apellido" name="apellido"/>
     </div>
     <div>
         <label for="direccion">Dirección:</label>
@@ -20,15 +20,15 @@
         <input type="text" id="postal" name="postal"/>
     </div>
     <div>
-        <label for="codigo">Dirección:</label>
-        <input type="text" id="codigo" name="codigo"/>
+        <label for="city">Ciudad:</label>
+        <input type="text" id="city" name="city"/>
     </div>
     <div>
-        <label for="ciudad">Ciudad:</label>
-        <input type="ciudad" id="ciudad" />
+        <label for="phone">Telefono:</label>
+        <input type="int" id="phone" name="phone"/>
     </div>
-    <div>
-        <label for="telefono">Telefono:</label>
-        <input type="telefono" id="telefono" />
-    </div>
+
+<input type="submit" value="Enviar" />
+
 </form>
+
