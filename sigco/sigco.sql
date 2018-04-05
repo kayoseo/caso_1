@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: localhost
--- Tiempo de generación: 05-04-2018 a las 16:53:31
+-- Tiempo de generación: 05-04-2018 a las 17:17:16
 -- Versión del servidor: 10.1.21-MariaDB
 -- Versión de PHP: 5.6.30
 
@@ -86,7 +86,8 @@ CREATE TABLE `vecinos` (
   `apellido` text NOT NULL,
   `postal` int(11) NOT NULL,
   `ciudad` text NOT NULL,
-  `telefono` text NOT NULL
+  `telefono` text NOT NULL,
+  `direccion` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 COMMIT;
 
