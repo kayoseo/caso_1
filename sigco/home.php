@@ -22,13 +22,13 @@
             <li><a href="#">Inicio.</a></li>
         </ul>
         <ul>
-            <li><a href="nuevoVecino.php">Agregar Vecino.</a></li>
+            <li><a href="nuevoVecino.php">Nuevo Vecino.</a></li>
         </ul>
         <ul>
             <li><a href="nuevaVisita.php">Nueva Visita.</a></li>
         </ul>
         <ul>
-            <li><a href="nuevaFactura.php">Crear Factura.</a></li>
+            <li><a href="nuevaFactura.php">Nueva Factura.</a></li>
         </ul>
     </nav>
     <p>Sistema de Gestión de Comunidades.</p>
